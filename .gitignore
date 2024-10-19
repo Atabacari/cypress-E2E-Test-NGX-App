@@ -396,3 +396,24 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+/2-advanced-examples
+/1-getting-started/*
+/2-advanced-examples/*
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Reports
+cypress/results/junit/*
+cypress/results/junit/.gitkeep
+cypress/results/mochawesome/*
+cypress/results/mochawesome/.gitkeep
+
+#Screenshots
+cypress/screenshots/*
