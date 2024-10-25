@@ -9,6 +9,7 @@ export class NavigationPage {
     stepperPage() {
         selectGroupMentuItem('Layout');
         cy.contains('Stepper').click();
+        cy.location('pathname').should('eq', '/pages/layout/stepper');
     }
 
     /**

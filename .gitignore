@@ -416,6 +416,8 @@ cypress/results/mochawesome/*
 cypress/results/mochawesome/.gitkeep
 mochawesome-report/*
 mochawesome-report/.gitkeep
+mochawesome.json
 
 #Screenshots
 cypress/screenshots/*
+
