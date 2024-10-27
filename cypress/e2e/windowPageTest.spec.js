@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import { navigateTo } from "../support/page_objects/navigationPage";
+import { navigateTo } from "../support/page_objects/navigationPage"
 import { windowPage } from "../support/page_objects/windowPage";
 
 describe('Window Page Test', () => {
@@ -23,7 +23,7 @@ describe('Window Page Test', () => {
 
     })
 
-    it.only('should minimeze / maximize the window', () => {
+    it('should minimeze / maximize the window', () => {
         const titleCard = "Window Form";
         const titleButton = "Open window form";
 

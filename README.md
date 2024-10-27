@@ -1,13 +1,15 @@
 # Cypress Demo Project
 
-This is my demo project to demonstrate my knowledge in automated testing with Cypress. 
-The project includes several tests for different web elements. 
-The purpose of this project is to demonstrate my skills in writing automated tests using Cypress, a modern and powerful testing tool for web applications.
+This is my demo project to demonstrate my knowledge in automated testing with Cypress and real-world usage of Cypress testing methods, patterns, and workflows. 
+
+
 
 ## Project Description
 
-The project is focused on testing various web elements such as buttons, input fields, dropdowns, and others. 
-The tests were written using Cypress to automate interactionsq.
+The project is focused on testing various web elements such as accordions, buttons, input fields, datepickers, forms, popover,steppers, and others. 
+The tests were written using Cypress to automate interactions.
+The code is organized and reusable, following the Page Object design pattern.
+The project includes the report function too. 
 
 
 ## How to Download and Run the Project
