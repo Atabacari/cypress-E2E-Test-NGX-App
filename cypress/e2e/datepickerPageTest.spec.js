@@ -24,8 +24,15 @@ describe('Datepicker Page Test Suite', () => {
         // Select a specific date.
         // Verify that the selected date is displayed correctly.
 
-        const day = '15';
-        const dateToValidate = 'Oct 15, 2024';
+        // Get the current month and year in the format it as "MMM YYYY"
+        const currentMonth = new Date().toLocaleDateString('en-US', { month: 'short' });
+        const currentYear = new Date().toLocaleDateString('en-US', { year: 'numeric' });
+
+        const dayToSelect = '15';
+
+        const dateToValidate = currentMonth + ' ' + dayToSelect + ', ' + currentYear;
+
+
         // Find and click the calendar input or trigger
         datepickerPage.openCalendar(CALENDAR_INDEX.PICKER);
 
@@ -33,7 +40,7 @@ describe('Datepicker Page Test Suite', () => {
         datepickerPage.calendar().should('be.visible');
 
         // Select a specific date (e.g., 15th of the current month)
-        datepickerPage.selectDate(day);
+        datepickerPage.selectDate(dayToSelect);
 
         // Verify that the selected date is displayed in the input field
         datepickerPage.inputCalendar(CALENDAR_INDEX.PICKER).should('have.value', dateToValidate);
