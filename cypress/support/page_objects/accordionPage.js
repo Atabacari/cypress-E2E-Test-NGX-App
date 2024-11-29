@@ -12,7 +12,9 @@ export class AccordionPage {
     */
     itemOfAccordion(indexAccordion, indexItem) {
         // Returns the specified accordion item element from the DOM
-        return cy.get('nb-accordion').eq(indexAccordion).find('nb-accordion-item-header').eq(indexItem);
+        const itemOfAccordion = cy.get('nb-accordion').eq(indexAccordion).find('nb-accordion-item-header').eq(indexItem);
+        itemOfAccordion.should('exist'); // Assert that the element exists
+        return itemOfAccordion;
     }
 
     /** Method to get a specific accordion text based on its index
@@ -20,7 +22,9 @@ export class AccordionPage {
     * @param {number} indexItem - index of the accordion item
     */
     textOfItem(indexAccordion, indexItem) {
-        return cy.get('nb-accordion').eq(indexAccordion).find('nb-accordion-item-body div div').eq(indexItem)
+        const textOfItem = cy.get('nb-accordion').eq(indexAccordion).find('nb-accordion-item-body div div').eq(indexItem)
+        textOfItem.should('exist'); // Assert that the element exists
+        return textOfItem;
     }
 
     /** Method to get a chevron of the item 
@@ -28,7 +32,9 @@ export class AccordionPage {
     * @param {number} indexItem - index of the accordion item
     */
     chevronOfItem(indexAccordion, indexItem) {
-        return this.itemOfAccordion(indexAccordion, indexItem).find('nb-icon')
+        const chevronOfItem = this.itemOfAccordion(indexAccordion, indexItem).find('nb-icon');
+        chevronOfItem.should('exist'); // Assert that the element exists
+        return chevronOfItem;
     }
 
 
