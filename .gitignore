@@ -421,3 +421,4 @@ mochawesome.json
 #Screenshots
 cypress/screenshots/*
 
+.ssh
