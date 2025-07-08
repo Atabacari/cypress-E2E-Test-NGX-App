@@ -420,4 +420,4 @@ mochawesome.json
 
 #Screenshots
 cypress/screenshots/*
-
+node_modules/
