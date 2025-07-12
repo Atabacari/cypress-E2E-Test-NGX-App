@@ -2,7 +2,7 @@
   "scripts": {
     "delete:reports": "rimraf --glob 'cypress/results/**/*'",
     "prereport": "npm run delete:reports",
-    "mochawesome:merge": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json",
+    "mochawesome:merge": "npx mochawesome-merge \"cypress/results/mochawesome/*.json\" > mochawesome.json && npx marge mochawesome.json --reportDir=cypress/results/mochawesome",
     "junit:merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/results.xml",
     "report": "cypress run --reporter cypress-multi-reporters --reporter-options configFile=reporter-config.json",
     "cy:run": "npm run prereport && npx cypress run ; npm run junit:merge ; npm run mochawesome:merge",
